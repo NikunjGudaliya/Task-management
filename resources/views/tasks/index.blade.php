@@ -671,34 +671,40 @@
                                 placeholder="Enter task description"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="editTaskProject" class="form-label fw-bold">Project</label>
-                            <select name="project_id" id="editTaskProject" class="form-select select2-modal"
-                                style="width: 100%;">
-                                <option value="">No Project</option>
-                                @foreach ($projects as $project)
-                                    <option value="{{ $project->id }}">{{ $project->name }}</option>
-                                @endforeach
-                            </select>
+                            <div class="w-100">
+                                <label for="editTaskProject" class="form-label fw-bold">Project</label>
+                                <select name="project_id" id="editTaskProject" class="form-select select2-modal"
+                                    style="width: 100%;">
+                                    <option value="">No Project</option>
+                                    @foreach ($projects as $project)
+                                        <option value="{{ $project->id }}">{{ $project->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="editTaskStatus" class="form-label fw-bold">Status</label>
-                            <select name="status" id="editTaskStatus" class="form-select select2-modal"
-                                style="width: 100%;">
-                                <option value="to_do">To Do</option>
-                                <option value="in_progress">In Progress</option>
-                                <option value="testing">Testing</option>
-                                <option value="completed">Completed</option>
-                            </select>
+                            <div class="w-100">
+                                <label for="editTaskStatus" class="form-label fw-bold">Status</label>
+                                <select name="status" id="editTaskStatus" class="form-select select2-modal"
+                                    style="width: 100%;">
+                                    <option value="to_do">To Do</option>
+                                    <option value="in_progress">In Progress</option>
+                                    <option value="testing">Testing</option>
+                                    <option value="completed">Completed</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="editTaskPriority" class="form-label fw-bold">Priority</label>
-                            <select name="priority" id="editTaskPriority" class="form-select select2-modal"
-                                style="width: 100%;">
-                                <option value="1">Low</option>
-                                <option value="2">Medium</option>
-                                <option value="3">High</option>
-                                <option value="4">Critical</option>
-                            </select>
+                            <div class="w-100">
+                                <label for="editTaskPriority" class="form-label fw-bold">Priority</label>
+                                <select name="priority" id="editTaskPriority" class="form-select select2-modal"
+                                    style="width: 100%;">
+                                    <option value="1">Low</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">High</option>
+                                    <option value="4">Critical</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
