@@ -1,0 +1,122 @@
+/* This file is reserved for overriding and extending the template styles. */
+
+
+.tox-promotion,
+.tox-statusbar__branding {
+    display: none !important;
+}
+
+.select2-dropdown {
+    width: max-content !important;
+}
+
+.select2-container {
+    min-width: 12rem;
+    width: max-content !important;
+}
+
+.upper-case input {
+    text-transform: uppercase;
+  }
+
+.trashed_filter {
+    color: var(--body);
+    box-shadow: initial !important;
+    background-color: var(--foreground);
+    border: 1px solid var(--separator) !important;
+    border-radius: var(--border-radius-md) !important;
+    min-height: var(--input-height) !important;
+    font-size: 1em;
+}
+
+.trashed_filter.active {
+    background-color: #eee;
+}
+
+.attendance-wrap .notes-wrap {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #124B80;
+    display: flex;
+    align-items: center;
+}
+
+.attendance-wrap .notes-wrap .note-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #494949;
+}
+
+.attendance-wrap .notes-wrap .note-top-bar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 10px 0;
+}
+
+.attendance-wrap .notes-wrap .note-top-bar li {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    flex-wrap: wrap;
+}
+
+.attendance-wrap .notes-wrap .note-top-bar li:not(:last-child) {
+    border-right: 1px solid #494949;
+}
+
+.attendance-wrap svg {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.attendance-wrap .flight-icon-full .fl-leave,
+.attendance-wrap .flight-icon-half .fl-leave {
+    fill: #FFBA53;
+}
+
+.attendance-wrap .notes-wrap .note-top-bar li .tag-label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #124B80;
+    margin: 0;
+}
+
+.attendance-wrap .notes-wrap .note-top-bar li .tag-label {
+    margin: 0 .4rem;
+}
+
+.attendance-wrap .note-total {
+    padding: 0;
+    list-style: none;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.attendance-wrap .note-total li.month p {
+    color: #494949;
+}
+.attendance-wrap .note-total li p {
+    margin: 0;
+}
+
+.attendance-wrap .note-total li {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-right: 1px solid #aeaeae;
+    flex-wrap: wrap;
+}
+
+.attendance-wrap .note-total li:last-child {
+    border-right: none;
+    padding: 0 0 0 8px;
+}
